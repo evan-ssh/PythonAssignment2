@@ -6,23 +6,26 @@ def main():
        print("Start number cannot be greater than stop.")
        continue
     else:
+        numbers(start_number, stop_number)
         square_number(start_number, stop_number)
         cube_number(start_number, stop_number)
     
 
-def numbers():
-   pass        
-
+def numbers(start_number, stop_number):
+    for x in range(start_number, stop_number):
+       print(x)        
+   
     
 def square_number(start_number, stop_number):
     for x in range(start_number, stop_number):
         square_number =  x ** 2
         print(square_number)
+    print()
     
 def cube_number(start_number, stop_number):
     for x in range(start_number, stop_number):   
         cubed_number = x ** 3
         print(cubed_number)
-    
+    print()
 
 main()
