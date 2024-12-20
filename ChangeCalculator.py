@@ -1,5 +1,5 @@
 def main():
-
+ while True:
     number_of_cents = int(input("Enter number of cents (0-99): "))
     quarters = number_of_cents // 25
     money_left = number_of_cents - 25 * quarters
@@ -20,5 +20,8 @@ def main():
     print(f"Nickles: ", nickles)
     print(f"Pennies: ", pennies )
 
+    go_again = input("Continue? (y/n)").lower()
+    if go_again != "y":
+      return False
 main()
     
