@@ -7,16 +7,18 @@ def main():
     dimes = money_left // 10
     money_left = money_left - 10 * dimes
     print(money_left)
-
     nickles =  money_left // 5
     money_left = money_left - 5 * nickles
     print(money_left)
     pennies = money_left // 1
+    money_left = money_left - 1 * pennies
+    print(money_left)
 
-    print(quarters)
-    print(dimes)
-    print(nickles)
-    print(pennies)
+
+    print(f"Quarters:", quarters)
+    print(f"Dimes:", dimes)
+    print(f"Nickles: ", nickles)
+    print(f"Pennies: ", pennies )
 
 main()
     
